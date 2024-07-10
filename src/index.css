@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+  background-color: var(--main-background);
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-bar);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 73, 97);
+}
+
+[data-theme='dark'] {
+  --main-background: #272B30;
+  --form-background: #3D4145;
+  --main-text: #f2f2f2;
+  --input-background: #272B30;
+  --game-footer: #262A2E;
+  --play-button: #036b7f;
+  --details-text: #000000;
+  --scroll-bar: rgb(0, 92, 123);
+}
+
+[data-theme='light'] {
+  --main-background: #EEEEEE;
+  --form-background: #F0F0F0;
+  --main-text: #000000;
+  --input-background: #EEEEEE;
+  --game-footer: #E7E7E7;
+  --play-button: #31D2F2;
+  --details-text: #f2f2f2;
+  --scroll-bar: rgb(0, 134, 179);
+}
+
+/************Mode***************/
+#mode {
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+}
+
+#mode i {
+  color: var(--main-text);
+}
+
+/******************Navbar*******************/
+.logo {
+  font-family: "Nerko One", cursive;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--main-text);
+}
+
+.logo:hover {
+  color: var(--main-text);
+}
+
+.linkSize {
+  font-size: 14px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 600;
+}
+
+.nav-item a {
+  color: var(--main-text);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+  color: #09c;
+}
+
+nav .active {
+  color: #09c !important;
+}
+
+.logOut {
+  color: var(--main-text);
+  transition: all 0.3s ease-in-out;
+}
+
+.logOut:hover {
+  color: #09c;
+}
+
+.nav-item i {
+  color: var(--main-text);
+}
+
+.navbar-toggler {
+  background-color: whitesmoke;
+}
+
+.NavStyle {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(33, 37, 41);
+}
+
+/******************Login & register*******************/
+.form-control {
+  background-color: var(--input-background);
+  color: var(--main-text) !important;
+  border: 1px solid rgba(33, 37, 41);
+}
+
+.form-control:focus {
+  background-color: var(--input-background);
+  box-shadow: none;
+  border: 1px solid rgba(33, 37, 41);
+}
+
+.containerShadow {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+}
+
+input::placeholder {
+  color: var(--main-text) !important;
+}
+
+/******************Home*******************/
+.loadingHeight {
+  min-height: calc(100vh - 140px);
+}
+
+.imgLoading {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+
+.handleSpace {
+  margin-bottom: 7px;
+}
+
+/******************Not found page*******************/
+.notFoundPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(Assets/wraper.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.notFoundPage h1,
+.notFoundPage p {
+  color: var(--main-text);
+}
+
+.notFoundPage h1 {
+  font-size: 60px;
+}
+
+.notFoundPage span {
+  color: #09c;
+}
+
+.notFoundPage p {
+  font-size: 22px;
+}

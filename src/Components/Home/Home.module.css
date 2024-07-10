@@ -1,0 +1,87 @@
+.topTitle {
+    color: var(--main-text);
+    font-size: 28px;
+    font-weight: 500;
+    margin-block: 15px;
+    font-family: "Nerko One", cursive;
+}
+
+.singleGame {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    border-radius: 5px;
+    font-family: "Nerko One", cursive;
+    height: 100%;
+    cursor: pointer;
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+}
+
+.singleGame:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+.singleGame img {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.singleGame video {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-height: 153.23px;
+    object-fit: cover;
+}
+
+.singleGame .topGamePart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.singleGame h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--main-text);
+}
+
+.singleGame .free {
+    background-color: #0D6EFD;
+    padding: 6px 8px 4px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-family: "Comfortaa", cursive;
+    font-weight: 700;
+    transition: all 0.4s ease-in-out;
+    color: whitesmoke;
+}
+
+.singleGame p {
+    color: #939598;
+    text-align: center;
+    font-family: "Nerko One", cursive;
+    font-weight: 100;
+    line-height: 18px;
+}
+
+.singleGame .bottomGamePart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--game-footer);
+    border-top: 1px solid rgba(0, 0, 0, 0.17);
+    padding: 5px 13px 5px 13px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding-block: 8px;
+}
+
+.singleGame .bottomGamePart span {
+    background-color: #32383E;
+    border-radius: 6px;
+    font-family: "Comfortaa", cursive;
+    font-weight: 900;
+    padding: 1px 5px;
+    font-size: 10px;
+    color: whitesmoke;
+}

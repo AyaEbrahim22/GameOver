@@ -1,0 +1,92 @@
+.detailsComponent {
+    padding: 80px 20px 50px 20px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.detailsBack {
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 24%);
+    border-radius: 8px;
+}
+
+.leftDetails {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.videoImg {
+    position: relative;
+}
+
+.videoImg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: calc(100% - 9px);
+}
+
+.leftDetails span {
+    color: whitesmoke;
+    background-color: #32383E;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftDetails a {
+    color: whitesmoke;
+    background-color: var(--play-button);
+    border: none;
+    width: 88%;
+    border-radius: 6px;
+    padding: 8px;
+    text-align: center;
+}
+
+.rightDetails h3 {
+    font-family: "Nerko One", cursive;
+    color: var(--details-text);
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.rightDetails span {
+    font-size: 25px;
+    font-family: "Nerko One", cursive;
+    color: var(--details-text);
+    font-weight: 100;
+}
+
+.rightDetails p {
+    color: var(--details-text);
+    margin-top: 15px;
+}
+
+.rightDetails h4 {
+    color: var(--details-text);
+    font-family: "Nerko One", cursive;
+    font-size: 33px;
+    border-bottom: 2px solid #6C757D;
+}
+
+.rightDetails .system h6 {
+    color: rgb(108, 117, 125);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.rightDetails .system span {
+    font-size: 16px;
+    font-family: "Comfortaa", cursive;
+    color: var(--details-text);
+    font-weight: 400;
+}
